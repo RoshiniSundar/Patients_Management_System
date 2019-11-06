@@ -1,0 +1,25 @@
+﻿@model RSPatients.Models.ConcentrationUnit
+
+@{
+    ViewData["Title"] = "Concentration unit Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <h2>Concentration unit Details</h2>
+
+<div>
+    <h4>ConcentrationUnit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ConcentrationCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ConcentrationCode)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ConcentrationCode">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

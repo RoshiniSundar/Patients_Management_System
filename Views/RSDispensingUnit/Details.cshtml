@@ -1,0 +1,25 @@
+﻿@model RSPatients.Models.DispensingUnit
+
+@{
+    ViewData["Title"] = "Dispensing code Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <h2>Dispensing Code Details</h2>
+
+<div>
+    <h4>DispensingUnit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DispensingCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DispensingCode)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.DispensingCode">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
